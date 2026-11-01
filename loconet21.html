@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>loconet21</title>
+<style>
+:root{
+  --bg:#1f2a44; --card:#2b3857; --card-hover:#34446b; --text:#f3efe6; --muted:#b4bdd1; --accent:#f2b84b; --accent-ink:#1f2a44;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){--bg:#f3efe6;--card:#fffdf8;--card-hover:#ece5d3;--text:#1f2a44;--muted:#5d6782;--accent:#1f2a44;--accent-ink:#f3efe6}
+}
+:root[data-theme="light"]{--bg:#f3efe6;--card:#fffdf8;--card-hover:#ece5d3;--text:#1f2a44;--muted:#5d6782;--accent:#1f2a44;--accent-ink:#f3efe6}
+:root[data-theme="dark"]{--bg:#1f2a44;--card:#2b3857;--card-hover:#34446b;--text:#f3efe6;--muted:#b4bdd1;--accent:#f2b84b;--accent-ink:#1f2a44}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;min-height:100vh;display:flex;justify-content:center}
+main{width:100%;max-width:460px;padding:48px 20px 40px;text-align:center}
+.avatar{width:104px;height:104px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-size:44px;font-weight:700;margin:0 auto 18px;font-family:Georgia,serif;box-shadow:0 0 0 4px var(--bg),0 0 0 6px var(--accent),0 10px 24px rgba(0,0,0,.25)}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:28px;margin:0 0 6px;letter-spacing:.2px}
+.bio{margin:0 auto 32px;color:var(--muted);font-style:normal;font-weight:400;font-size:14px;line-height:1.5;max-width:34ch}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+a.link{position:relative;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card);color:var(--text);text-decoration:none;font-weight:600;font-size:14px;text-align:left;border:2px solid color-mix(in srgb,var(--text) 14%,transparent);box-shadow:0 6px 16px rgba(0,0,0,.14);transition:background .15s,transform .15s,border-color .15s,box-shadow .15s;-webkit-tap-highlight-color:transparent}
+a.link::after{content:"›";margin-left:auto;font-size:24px;line-height:1;opacity:.5}
+a.link:hover{background:var(--card-hover);transform:translateY(-1px)}
+a.link:active,a.link:focus,a.link.selected{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 35%,transparent),0 6px 16px rgba(0,0,0,.14);outline:none}
+a.link:active{transform:scale(.98)}
+a.link.main:active,a.link.main:focus,a.link.main.selected{border-color:var(--text)}
+a.link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+a.link.main{background:var(--accent);color:var(--accent-ink)}
+a.link.main:hover{background:var(--accent);filter:brightness(1.06)}
+.icon{font-size:22px;width:28px;text-align:center}
+.label small{display:block;font-weight:400;font-size:12px;opacity:.75;margin-top:2px}
+footer{margin-top:36px;font-size:13px;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){a.link{transition:none}a.link:hover{transform:none}}
+html:root:root{--bg:#8f1a27;--card:rgba(255,255,255,.12);--card-hover:rgba(255,255,255,.2);--text:#fff4f0;--muted:#f0c4c0;--accent:#ffd9a0;--accent-ink:#5a0e16;color-scheme:dark;min-height:100%;background:#000 linear-gradient(180deg,#c42a38 0%,#7a1420 40%,#000 100%) no-repeat}
+html:root:root body{background:transparent;font-style:italic;font-style:oblique 10deg}
+.icon{display:none}
+</style>
+</head>
+<body>
+<main>
+  <div class="avatar" aria-hidden="true">L</div>
+  <h1>loconet21</h1>
+  <p class="bio">TODOS MERECEMOS UNA OPORTUNIDAD QUE DIOS ME LOS BENDIGA EL QUERER ES PODER</p>
+  <ul>
+    <li><a class="link" href="https://www.facebook.com/share/1Ab1uQCLre/" target="_blank" rel="noopener"><span class="icon"></span><span class="label">Facebook</span></a></li>
+    <li><a class="link" href="https://www.tiktok.com/@loconet212?_r=1&amp;_t=ZS-9B1knyt6YVB" target="_blank" rel="noopener"><span class="icon">🎵</span><span class="label">TikTok</span></a></li>
+    <li><a class="link" href="https://youtube.com/@loconet21oficial?si=vbttz3mdtYgYxrO_" target="_blank" rel="noopener"><span class="icon">▶️</span><span class="label">YouTube</span></a></li>
+    <li><a class="link" href="https://www.instagram.com/loconet21oficial?rpxt=bDI5ZjB3Mmo2YmYw" target="_blank" rel="noopener"><span class="icon">📷</span><span class="label">Instagram</span></a></li>
+    <li><a class="link" href="mailto:hola@tusitio.com"><span class="icon">✉️</span><span class="label">Contacto por correo</span></a></li>
+  </ul>
+  <footer>© loconet21</footer>
+</main>
+<script>
+document.querySelectorAll('a.link').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('a.link.selected').forEach(function(x){x.classList.remove('selected')});
+    a.classList.add('selected');
+  });
+});
+</script>
+</body>
+</html>
